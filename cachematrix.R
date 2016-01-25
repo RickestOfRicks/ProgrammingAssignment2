@@ -32,7 +32,7 @@ cacheSolve <- function(x, ...) {
 		message("Getting cached inverse.")	## If the inverse has been calculated
 		return(inverse)				## returns the cached matrix
 	}
-	matrix <- x$get()					## If the inverse has not been calculated
+	matrix <- x$get()				## If the inverse has not been calculated
 	inverse <- solve(matrix)			## previously, calculates the inverse of the matrix
 	x$setInverse(inverse)
 
